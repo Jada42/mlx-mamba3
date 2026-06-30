@@ -1,0 +1,7 @@
+mlx
+torch
+transformers
+safetensors
+numpy
+einops
+pytest
