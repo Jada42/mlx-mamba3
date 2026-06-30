@@ -1,5 +1,26 @@
 # Native MLX Mamba-3 on Apple Silicon
 
+<p align="left">
+  <a href="https://github.com/jada42/mlx-mamba3/actions/workflows/ci.yml">
+    <img src="https://github.com/jada42/mlx-mamba3/actions/workflows/ci.yml/badge.svg" alt="CI Status" />
+  </a>
+  <a href="https://github.com/ml-explore/mlx">
+    <img src="https://img.shields.io/badge/framework-MLX-red?style=flat-square&logo=apple" alt="Framework - MLX" />
+  </a>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue?style=flat-square&logo=python&logoColor=white" alt="Python - Version" />
+  </a>
+  <a href="https://apple.com">
+    <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Apple%20Silicon-lightgrey?style=flat-square&logo=apple&logoColor=white" alt="Platform - macOS" />
+  </a>
+  <a href="https://github.com/jada42/mlx-mamba3">
+    <img src="https://img.shields.io/badge/status-verified%20%26%20stable-success?style=flat-square" alt="Status" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License - MIT" />
+  </a>
+</p>
+
 Native MLX reimplementation of the Mamba-3 architecture from `state-spaces/mamba`, adapted for Apple Silicon (MLX). The implementation mirrors the block-selection logic, core Mamba-3 recurrence concepts, inference-cache semantics, and config structure, while adding MLX-native generation, benchmarking, serialization, and LoRA fine-tuning utilities. It is executed locally with MLX on Apple Silicon, using Metal acceleration for benchmarked workloads.
 
 ---
