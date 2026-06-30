@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlx-mamba-native"
+version = "0.1.0"
+description = "A native, Metal-accelerated Mamba-3 implementation in MLX for Apple Silicon."
+readme = "README.md"
+authors = [
+    { name = "Julian Adam", email = "jul.p.adam@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+requires-python = ">=3.10"
+dependencies = [
+    "mlx>=0.10.0",
+    "numpy",
+    "einops",
+    "safetensors"
+]
+
+[project.optional-dependencies]
+dev = [
+    "torch",
+    "transformers",
+    "pytest",
+    "black"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mlx_mamba_native*"]
