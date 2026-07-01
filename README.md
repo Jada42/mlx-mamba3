@@ -41,7 +41,6 @@ Native MLX reimplementation of the Mamba-3 architecture from `state-spaces/mamba
 
 Existing Mamba-3 implementations primarily target CUDA-based systems and require writing or compiling custom Triton or CUDA C++ kernels. This repository provides a native Python/MLX implementation optimized for Apple Silicon, making Mamba-3's architectural improvements (discretization, rotary states, and MIMO projections) accessible for local research, prototyping, and fine-tuning on macOS. 
 
-*Note: This implementation represents an interpretation of the "Draft Specification of Mamba-3 Architectural Modifications" rather than a universally settled public standard, serving as a clean experimental reference.*
 
 ---
 
@@ -128,7 +127,7 @@ The following benchmarks were measured locally on Apple Silicon:
 ## Repository Structure
 
 ```
-joyful-lovelace/
+mlx-mamba-3/
   mlx_mamba_native/
     __init__.py          # Exposed APIs
     model.py             # Core Mamba-3 architecture
